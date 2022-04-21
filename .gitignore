@@ -61,3 +61,4 @@ Thumbs.db
 !.gitignore
 !.nvmrc
 !.phpcs.xml.dist
+!/workflows
