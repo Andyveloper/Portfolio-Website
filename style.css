@@ -9,20 +9,22 @@ body {
   padding: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Crete Round', serif;
 }
 
-h3, p {
+h3,
+p {
   font-family: 'Inter', sans-serif;
 }
 
 header {
-  background-color: #1C1A19 ;
+  background-color: #1c1a19;
 }
 
 #navcontainer {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +36,7 @@ header {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   margin-left: 12px;
 }
@@ -57,17 +59,17 @@ header {
   line-height: 64px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
-  color: #FF6B00;
+  color: #ff6b00;
   margin-bottom: 12px;
 }
 
 #subhero {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
 }
@@ -77,9 +79,8 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #FFFFFF;
-  margin: 12px 0px;
+  color: #fff;
+  margin: 12px 0;
 }
-
