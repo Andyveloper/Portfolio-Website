@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Crete Round', serif;
+}
+
+h3,
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  background-color: #1c1a19;
+  background-image: url(/img/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: right 280px;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+#mainaxis {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navcontainer {
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+#menulogo {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-left: 12px;
+}
+
+#burgermenu {
+  margin-right: 12px;
+}
+
+#headercontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 24px;
+  margin: 0;
+}
+
+#hero {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 12px;
+}
+
+#subhero {
+  color: #fff5e1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+}
+
+#herotext {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  margin: 12px 0;
+}
