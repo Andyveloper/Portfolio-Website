@@ -84,3 +84,9 @@ header {
   color: #fff;
   margin: 12px 0;
 }
+
+#bgimg {
+  position: absolute;
+  top: 200;
+  left: 300;
+}
