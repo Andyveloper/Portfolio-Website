@@ -19,11 +19,27 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
-header {
+section {
   background-color: #1c1a19;
   background-image: url(/img/Illustration.png);
   background-repeat: no-repeat;
   background-position: right 280px;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+#mainaxis {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 #navcontainer {
