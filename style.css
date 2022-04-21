@@ -21,6 +21,9 @@ p {
 
 header {
   background-color: #1c1a19;
+  background-image: url(/img/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: right 280px;
 }
 
 #navcontainer {
@@ -85,8 +88,3 @@ header {
   margin: 12px 0;
 }
 
-#bgimg {
-  position: absolute;
-  top: 200;
-  left: 300;
-}
