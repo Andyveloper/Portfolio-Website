@@ -213,7 +213,7 @@ button:hover {
   color: #fff;
 }
 
-#lang-boxes2 {
+.lang-boxes2 {
   display: flex;
   justify-content: left;
   align-items: center;
