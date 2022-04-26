@@ -305,3 +305,62 @@ button:hover {
 .no-padding {
   padding: 0;
 }
+
+.form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  padding: 24px;
+  padding-top: 120px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.formUl {
+  padding: 0;
+}
+
+.formInput {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px lightgray solid;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input {
+  border: none;
+  padding: 0 16px 0 16px;
+}
+
+textarea {
+  background-color: #e5e5e5;
+  height: 114px;
+  width: 327px;
+  border: none;
+  padding: 12px;
+  font-family: Inter, sans-serif;
+}
+
+#no-border {
+  border: none;
+}
