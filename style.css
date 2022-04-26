@@ -331,6 +331,8 @@ form {
   justify-content: center;
   align-items: center;
   padding-left: 0;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 124px;
 }
 
 .formUl {
@@ -363,4 +365,18 @@ textarea {
 
 #no-border {
   border: none;
+}
+
+.iconsBot {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+  align-items: center;
+
+  /* background-color: black; */
+}
+
+#marginTop {
+  margin-top: 26px;
 }
