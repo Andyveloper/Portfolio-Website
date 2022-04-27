@@ -30,8 +30,15 @@ a {
 }
 
 button:hover {
-  background-color: purple;
-  transition: all 320ms ease-in;
+  background-color: #fff5e1;
+  transition: all 160ms ease-in;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background-color: #e05304;
+  color: white;
 }
 
 #top {
