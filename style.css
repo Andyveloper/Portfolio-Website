@@ -47,6 +47,8 @@ button:active {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 35%;
+  height: 100vh;
+  width: auto;
 }
 
 #mainaxis {
@@ -186,6 +188,9 @@ button:active {
 .grid-item2 {
   margin: 12px 24px 12px 24px;
   background-image: url(/img/grid-item2-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 386px;
   display: flex;
   flex-direction: column;
