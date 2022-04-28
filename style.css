@@ -28,6 +28,7 @@ a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
 }
+
 button {
   transition: all 160ms ease-in;
 }
@@ -408,10 +409,9 @@ textarea {
   align-items: center;
 }
 
-.menu-item{
+.menu-item {
   padding: 10px 12px;
   color: #fff;
-  
 }
 
 .menu-style {
@@ -420,20 +420,21 @@ textarea {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
- 
 }
 
 #mail-icon {
   width: 60%;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #menu {
     display: none;
   }
+
   .vector {
     display: none;
   }
+
   #divider2 {
     display: none;
   }
@@ -441,7 +442,7 @@ textarea {
 
 /* DISPLAY SIZE 768px AND UP */
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   #burgermenu {
     display: none;
   }
@@ -460,7 +461,7 @@ textarea {
   #headercontainer {
     margin: 0 7rem 0 7rem;
     width: 30rem;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     height: 100vh;
   }
 
@@ -492,16 +493,15 @@ textarea {
     margin: 120px 24px 40px 24px;
     padding: 0 7rem 0 7rem;
     border: none;
-    
   }
 
   .grid-container {
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     padding-left: 7rem;
     padding-right: 7rem;
   }
 
-  #grid-item1{
+  #grid-item1 {
     grid-column: 1 / 4;
     display: flex;
     flex-direction: row;
@@ -536,7 +536,7 @@ textarea {
   .aboutcontainer {
     margin: 0 7rem 0 7rem;
     width: 30rem;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     height: 100vh;
   }
 
@@ -547,7 +547,6 @@ textarea {
   #divider2 {
     margin: 7rem;
     width: 80%;
-    
   }
 
   #divider {
@@ -557,18 +556,14 @@ textarea {
   .aboutcontainer2 {
     display: flex;
     margin: 0 7rem 0 7rem;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
     justify-content: space-around;
     align-items: flex-start;
     padding-bottom: 8rem;
   }
 
-  .lang-list-item{
+  .lang-list-item {
     line-height: normal;
-  }
-
-  form {
-    border: none;
   }
 
   .form {
@@ -588,12 +583,11 @@ textarea {
   }
 
   .formTitle {
-    
     text-align: left;
     margin-left: 7rem;
     margin-right: 1.5rem;
   }
-  
+
   .form-desktop {
     align-items: center;
     justify-content: center;
@@ -603,6 +597,7 @@ textarea {
   form {
     align-items: flex-start;
     padding-top: 120px;
+    border: none;
   }
 
   #large-form {
@@ -623,7 +618,7 @@ textarea {
   }
 }
 
-@media(min-width: 1600px) {
+@media (min-width: 1600px) {
   .herotext {
     font-size: 1.5rem;
     line-height: 36px;
@@ -638,7 +633,7 @@ textarea {
     font-size: 4.5rem;
     line-height: 5rem;
   }
-  
+
   #subtitle {
     font-size: 3rem;
   }
