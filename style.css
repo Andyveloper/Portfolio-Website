@@ -28,10 +28,12 @@ a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
 }
+button {
+  transition: all 160ms ease-in;
+}
 
 button:hover {
   background-color: #fff5e1;
-  transition: all 160ms ease-in;
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -257,6 +259,12 @@ button:active {
   margin: 0;
 }
 
+.aboutlang2 {
+  flex-direction: row;
+  background-color: #1c1a19;
+  margin: 0;
+}
+
 #divider {
   display: flex;
   justify-content: center;
@@ -385,10 +393,272 @@ textarea {
   padding: 0;
   gap: 10px;
   align-items: center;
-
-  /* background-color: black; */
 }
 
 #marginTop {
   margin-top: 26px;
+}
+
+#menu-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-right: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item{
+  padding: 10px 12px;
+  color: #fff;
+  
+}
+
+.menu-style {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+ 
+}
+
+#mail-icon {
+  width: 60%;
+}
+
+@media(max-width: 768px) {
+  #menu {
+    display: none;
+  }
+  .vector {
+    display: none;
+  }
+  #divider2 {
+    display: none;
+  }
+}
+
+/* DISPLAY SIZE 768px AND UP */
+
+@media(min-width: 768px) {
+  #burgermenu {
+    display: none;
+  }
+
+  #menulogo {
+    padding-left: 7rem;
+  }
+
+  #top {
+    flex-direction: row;
+    background-image: url(/img/Illustration-header-dsktp.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  #headercontainer {
+    margin: 0 7rem 0 7rem;
+    width: 30rem;
+    font-size: 1.2rem;    
+    height: 100vh;
+  }
+
+  #mainaxis {
+    display: block;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+  }
+
+  #work-subt {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+  }
+
+  .vector {
+    height: 2px;
+    margin: 120px 24px 40px 24px;
+    padding-right: 7rem;
+    width: 60%;
+  }
+
+  #center {
+    text-align: left;
+    color: #1c1a19;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 120px 24px 40px 24px;
+    padding: 0 7rem 0 7rem;
+    border: none;
+    
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto auto ;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  #grid-item1{
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .grid-content {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .grid-span {
+    width: 60%;
+    height: auto;
+    padding-right: 1.5rem;
+  }
+
+  #subtitle {
+    margin: 0;
+  }
+
+  .aboutlang {
+    flex-direction: row;
+    background-image: url(/img/about-img-desktp.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .aboutcontainer {
+    margin: 0 7rem 0 7rem;
+    width: 30rem;
+    font-size: 1.2rem;    
+    height: 100vh;
+  }
+
+  #bg-img {
+    display: none;
+  }
+
+  #divider2 {
+    margin: 7rem;
+    width: 80%;
+    
+  }
+
+  #divider {
+    display: none;
+  }
+
+  .aboutcontainer2 {
+    display: flex;
+    margin: 0 7rem 0 7rem;
+    font-size: 1.2rem;    
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 8rem;
+  }
+
+  .lang-list-item{
+    line-height: normal;
+  }
+
+  form {
+    border: none;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px lightgray solid;
+  }
+
+  #get-in-touch {
+    width: 36%;
+  }
+
+  .formTitle {
+    
+    text-align: left;
+    margin-left: 7rem;
+    margin-right: 1.5rem;
+  }
+  
+  .form-desktop {
+    align-items: center;
+    justify-content: center;
+    width: 64%;
+  }
+
+  form {
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+
+  #large-form {
+    width: 100%;
+  }
+
+  .formUl {
+    width: 70%;
+    margin-left: 5rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  #last-btn {
+    margin-left: 5rem;
+  }
+}
+
+@media(min-width: 1600px) {
+  .herotext {
+    font-size: 1.5rem;
+    line-height: 36px;
+    width: 40rem;
+  }
+
+  #subhero {
+    font-size: 2rem;
+  }
+
+  .hero {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  
+  #subtitle {
+    font-size: 3rem;
+  }
+
+  #text-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .full-width-btn {
+    margin: 12px 0 0 0;
+  }
+
+  .grid-item2 {
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+
+  .grid-item-last {
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
 }

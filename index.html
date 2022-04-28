@@ -18,6 +18,14 @@
     </div>
     <nav>
       <img id="burgermenu" src="./img/burger.png" alt="">
+      <div id="menu">
+        <ul id="menu-container">
+          <li class="menu-item"><a class="menu-style" href="#">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-style" href="#">About</a></li>
+          <li class="menu-item"><a class="menu-style" href="#">Contact</a></li>
+          <li class="menu-item"><img id="mail-icon" src="/img/icons/icons8-mail-48.png" alt=""></li>
+        </ul>
+      </div>
     </nav>
   </header>
   
@@ -44,19 +52,24 @@
   <!-- Work Section -->
 
   <section id="work">  
-    <h2 id="center">My Recent Works</h2>
+    <div id="work-subt">
+      <h2 id="center">My Recent Works</h2>
+      <img src="/img/icons/Vector.png" alt="" class="vector">
+    </div>
     <div class="grid-container">
       <div id="grid-item1">
-        <img src="/img/Img-placeholder.png" alt="">
-        <h2 id="subtitle">Multi-Post Stories</h2>
-        <p id="text-content">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-        <ul id="lang-boxes">
-          <li class="lang-box1">css</li>
-          <li class="lang-box1">html</li>
-          <li class="lang-box1">bootstrap</li>
-          <li class="lang-box1">Ruby</li>
-        </ul>
-        <button class="main-button">See Project</button>
+        <img class="grid-span" src="/img/Img-placeholder.png" alt="">
+        <div class="grid-content">
+          <h2 id="subtitle">Multi-Post Stories</h2>
+          <p id="text-content">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+          <ul id="lang-boxes">
+            <li class="lang-box1">css</li>
+            <li class="lang-box1">html</li>
+            <li class="lang-box1">bootstrap</li>
+            <li class="lang-box1">Ruby</li>
+          </ul>
+          <button class="main-button">See Project</button>
+        </div>
       </div>
       <div class="grid-item2">
         <h2 class="subtitle2">Professional Art Printing Data</h2>
@@ -132,49 +145,56 @@
       </div>
     <img id="bg-img" src="/img/Frame.png" alt="">
     <img id="divider" src="/img/Devider.png" alt="">
+    <img id="divider2" src="/img/Devider-dsktp.png" alt="">
   </section>
 
   <!-- Languages Section -->
 
-  <section class="aboutlang">
-    <div class="aboutcontainer">
-      <div class="lang-main">
-        <img class="title-icon" src="/img/icons/Rectangle-55.png" alt="">
-        <h2 class="lang-title">Language</h2>
+  <section class="aboutlang2">
+    <div class="aboutcontainer2">
+      <div>
+        <div class="lang-main">
+          <img class="title-icon" src="/img/icons/Rectangle-55.png" alt="">
+          <h2 class="lang-title">Language</h2>
+        </div>
+        <div class="lang-main-list">
+          <ul class="no-padding">
+            <li class="lang-list-item">JavaScript</li>
+            <li class="lang-list-item">Ruby</li>
+            <li class="lang-list-item">HTML</li>
+            <li class="lang-list-item">CSS</li>
+          </ul>
+        </div>
       </div>
-      <div class="lang-main-list">
-        <ul class="no-padding">
-          <li class="lang-list-item">JavaScript</li>
-          <li class="lang-list-item">Ruby</li>
-          <li class="lang-list-item">HTML</li>
-          <li class="lang-list-item">CSS</li>
-        </ul>
+      <div>
+        <div class="lang-main">
+          <img class="title-icon" src="/img/icons/Rectangle-56.png" alt="">
+          <h2 class="lang-title">Frameworks</h2>
+        </div>
+        <div class="lang-main-list">
+          <ul class="no-padding">
+            <li class="lang-list-item">Bootstrap</li>
+            <li class="lang-list-item">Ruby on Rails</li>
+            <li class="lang-list-item">RSPec</li>
+            <li class="lang-list-item">CapyBara</li>
+            <li class="lang-list-item">Selenium</li>
+          </ul>
+        </div>
       </div>
-      <div class="lang-main">
-        <img class="title-icon" src="/img/icons/Rectangle-56.png" alt="">
-        <h2 class="lang-title">Frameworks</h2>
-      </div>
-      <div class="lang-main-list">
-        <ul class="no-padding">
-          <li class="lang-list-item">Bootstrap</li>
-          <li class="lang-list-item">Ruby on Rails</li>
-          <li class="lang-list-item">RSPec</li>
-          <li class="lang-list-item">CapyBara</li>
-          <li class="lang-list-item">Selenium</li>
-        </ul>
-      </div>
-      <div class="lang-main">
-        <img class="title-icon" src="/img/icons/Rectangle-57.png" alt="">
-        <h2 class="lang-title">Skills</h2>
-      </div>
-      <div class="lang-main-list">
-        <ul class="no-padding">
-          <li class="lang-list-item">Codekit</li>
-          <li class="lang-list-item">Github</li>
-          <li class="lang-list-item">Codepen</li>
-          <li class="lang-list-item">Gitlab</li>
-          <li class="lang-list-item">Terminal</li>
-        </ul>
+      <div>
+        <div class="lang-main">
+          <img class="title-icon" src="/img/icons/Rectangle-57.png" alt="">
+          <h2 class="lang-title">Skills</h2>
+        </div>
+        <div class="lang-main-list">
+          <ul class="no-padding">
+            <li class="lang-list-item">Codekit</li>
+            <li class="lang-list-item">Github</li>
+            <li class="lang-list-item">Codepen</li>
+            <li class="lang-list-item">Gitlab</li>
+            <li class="lang-list-item">Terminal</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -182,21 +202,27 @@
   <!-- Contact form section as per required in https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/3_contact_form.md -->
 
   <section class="form">
-    <h2 class="formTitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-    <form action="https://formspree.io/f/mzbokrka" method="post">
-      <ul class="formUl">
-        <li  class="formInput">
-          <input type="text" name="name" placeholder="Full name" maxlength="30" required>
-        </li>
-        <li class="formInput">
-          <input type="email" id="mail" name="email" placeholder="E-mail address" required>
-        </li>
-        <li class="formInput" id="no-border">
-          <textarea  class="textarea1" name="message" maxlength="500" required placeholder="Enter text here"></textarea>
-        </li>
-      </ul>
-      <button type="submit" class="main-button">Get in touch</button>
-    </form>
+    <div id="get-in-touch">
+      <h2 class="formTitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    </div>
+    <div class="form-desktop">
+      <form id="large-form" action="https://formspree.io/f/mzbokrka" method="post">
+        <ul class="formUl">
+          <li  class="formInput">
+            <input type="text" name="name" placeholder="Full name" maxlength="30" required>
+          </li>
+          <li class="formInput">
+            <input type="email" id="mail" name="email" placeholder="E-mail address" required>
+          </li>
+          <li class="formInput" id="no-border">
+            <textarea  class="textarea1" name="message" maxlength="500" required placeholder="Enter text here"></textarea>
+          </li>
+        </ul>
+        <button id="last-btn" type="submit" class="main-button">Get in touch</button>
+      </form>
+    </div>
+  </section>
+  <section class="form2">
     <div id="marginTop">
       <ul class="iconsBot">
         <li><a href="https://github.com/Zeraltz"><img src="./img/social/dark-icons/Github.png" alt=""></a></li>
