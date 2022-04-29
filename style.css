@@ -627,6 +627,7 @@ textarea {
   #grid-item1 {
     grid-column: 1 / 4;
   }
+}
 
 @media (min-width: 1600px) {
   .herotext {
