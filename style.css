@@ -455,10 +455,6 @@ textarea {
     display: none;
   }
 
-  #menulogo {
-    padding-left: 10%;
-  }
-
   #top {
     flex-direction: row;
     background-image: url(./img/Illustration-header-dsktp.png);
