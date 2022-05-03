@@ -419,10 +419,19 @@ textarea {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.menu-style:hover {
+  color: #ff6b00;
+}
+
+.menu-style:active {
+  color: #e05304;
 }
 
 #mail-icon {
-  width: 60%;
+  width: 2rem;
 }
 
 @media (max-width: 768px) {
