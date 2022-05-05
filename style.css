@@ -35,12 +35,12 @@ button {
 
 button:hover {
   background-color: #fff5e1;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #cc4b02;
+  color: #cc4b02;
 }
 
 button:active {
-  background-color: #000;
+  background-color: #cc4b02;
   color: white;
 }
 
@@ -177,11 +177,11 @@ button:active {
 }
 
 .main-button {
-  background-color: black;
+  background-color: #cc4b02;
   color: white;
   padding: 12px;
   width: fit-content;
-  border: 1px solid black;
+  border: 1px solid #cc4b02;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -245,7 +245,7 @@ button:active {
 
 .full-width-btn {
   border: none;
-  background-color: #000;
+  background-color: #cc4b02;
   color: white;
   padding: 12px;
   font-size: 17px;
