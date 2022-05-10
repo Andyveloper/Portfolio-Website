@@ -67,10 +67,6 @@ button:active {
   padding: 24px 12px;
 }
 
-/* .indexPriority {
-  z-index: 9999;
-} */
-
 .menu {
   position: fixed;
   transform: translateY(-100%);
