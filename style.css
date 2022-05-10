@@ -67,9 +67,9 @@ button:active {
   padding: 24px 12px;
 }
 
-.indexPriority {
+/* .indexPriority {
   z-index: 9999;
-}
+} */
 
 .menu {
   position: fixed;
@@ -101,7 +101,8 @@ button:active {
 }
 
 .burgermenu {
-  z-index: 100;
+  position: absolute;
+  z-index: 9999;
   top: 1rem;
   right: 1rem;
   padding: 4px;
@@ -513,6 +514,23 @@ textarea {
 
   .menu {
     all: unset;
+  }
+
+  .menu-style {
+    font-size: 1rem;
+  }
+
+  .menu-item {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  #mail-icon {
+    display: block;
+  }
+
+  #lineHide {
+    display: block;
   }
 
   #navcontainer {
