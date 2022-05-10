@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .vector {
+    display: none;
+  }
+
+  #divider2 {
+    display: none;
+  }
+}
+
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-item {
+  width: 100%;
+  border-bottom: lightgray solid 1px;
+}
+
+#lineHide {
+  display: none;
+}
+
+#mail-icon {
+  display: none;
+}
+
+.menu-style {
+  font-size: 2rem;
+}
