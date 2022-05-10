@@ -64,8 +64,31 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 24px 12px;
 }
+
+.indexPriority {
+  z-index: 9999;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #1c1a19;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
 
 #menulogo {
   color: white;
@@ -77,8 +100,20 @@ button:active {
   margin-left: 12px;
 }
 
-#burgermenu {
-  margin-right: 12px;
+.burgermenu {
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.closeIcon {
+  display: none;
+  z-index: 99;
 }
 
 #headercontainer {
@@ -434,11 +469,9 @@ textarea {
   width: 2rem;
 }
 
-@media (max-width: 768px) {
-  #menu {
-    display: none;
-  }
 
+
+@media (max-width: 768px) {
   .vector {
     display: none;
   }
@@ -448,11 +481,58 @@ textarea {
   }
 }
 
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-item {
+  width: 100%;
+  border-bottom: lightgray solid 1px;
+}
+
+#lineHide {
+  display: none;
+}
+
+#mail-icon {
+  display: none;
+}
+
+.menu-style {
+  font-size: 2rem;
+}
+
 /* DISPLAY SIZE 768px AND UP */
 
 @media (min-width: 768px) {
-  #burgermenu {
+  .burgermenu {
     display: none;
+  }
+
+  .menu {
+    all: unset;
+  }
+
+  #navcontainer {
+    padding: 0 12px;
+  }
+  
+  #menu-container {
+    all: unset;
+  }
+
+  #menu-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    padding: 12px 12px;
   }
 
   #top {
