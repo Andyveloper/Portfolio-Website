@@ -80,11 +80,11 @@ button:active {
   color: white;
   list-style: none;
   padding-top: 4rem;
-  }
+}
 
-  .showMenu {
-    transform: translateY(0);
-  }
+.showMenu {
+  transform: translateY(0);
+}
 
 #menulogo {
   color: white;
@@ -466,8 +466,6 @@ textarea {
   width: 2rem;
 }
 
-
-
 @media (max-width: 768px) {
   .vector {
     display: none;
@@ -532,16 +530,12 @@ textarea {
   #navcontainer {
     padding: 0 12px;
   }
-  
-  #menu-container {
-    all: unset;
-  }
 
   #menu-container {
+    all: unset;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    padding-right: 10%;
     justify-content: center;
     align-items: center;
     text-decoration: none;
