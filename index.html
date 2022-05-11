@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mauricio's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./max-width-768.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="./min-width-768.css"  media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./min-width-1280.css" media="screen and (min-width: 1280px)">
+  <link rel="stylesheet" href="./min-width-1600.css" media="screen and (min-width: 1600px)">
 </head>
 
   <!--This section is for the first pull request at Microverse, requirements: https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md  -->
@@ -16,14 +21,17 @@
     <div>
       <a id="menulogo" href="#">Mauricio Cantillo</a>
     </div>
-    <nav>
-      <img id="burgermenu" src="./img/burger.png" alt="menu icon">
-      <div id="menu">
+    <nav class="indexPriority">
+      <button class="burgermenu">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+      <div class="menu">
         <ul id="menu-container">
-          <li class="menu-item"><a class="menu-style" href="#">Portfolio</a></li>
-          <li class="menu-item"><a class="menu-style" href="#">About</a></li>
-          <li class="menu-item"><a class="menu-style" href="#">Contact</a></li>
-          <li class="menu-item"><a href="#"><img id="mail-icon" src="./img/icons/icons8-mail-48.png" alt="mail icon"></a></li>
+          <li class="menu-item"><a class="menu-style" href="#Portfolio">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-style" href="#About">About</a></li>
+          <li class="menu-item"><a class="menu-style" href="#Contact">Contact</a></li>
+          <li class="menu-item" id="lineHide"><a href="#"><img id="mail-icon" src="./img/icons/icons8-mail-48.png" alt="mail icon"></a></li>
         </ul>
       </div>
     </nav>
@@ -51,7 +59,7 @@
   <!--This section is for the second pull request at Microverse, requirements: https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/2_mobile.md  -->
   <!-- Work Section -->
 
-  <section id="work">  
+  <section id="Portfolio" class="work">  
     <div id="work-subt">
       <h2 id="center">My Recent Works</h2>
       <img src="./img/icons/Vector.png" alt="Separator" class="vector">
@@ -136,7 +144,7 @@
 
   <!-- About Me section -->
   
-  <section class="aboutlang">
+  <section class="aboutlang" id="About">
     <div class="aboutcontainer">
       <h1 class="hero">About me</h1>
       <p class="herotext">Hello, I'm a Software Developer, I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -201,7 +209,7 @@
 
   <!-- Contact form section as per required in https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/3_contact_form.md -->
 
-  <section class="form">
+  <section class="form" id="Contact">
     <div id="get-in-touch">
       <h2 class="formTitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
     </div>
@@ -233,6 +241,6 @@
       </ul>
     </div>
   </section>
-
+  <script src="./index.js"></script>
 </body>
 </html>

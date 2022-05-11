@@ -1,0 +1,39 @@
+@media (min-width: 1600px) {
+  .herotext {
+    font-size: 1.5rem;
+    line-height: 36px;
+    width: 40rem;
+  }
+
+  #subhero {
+    font-size: 2rem;
+  }
+
+  .hero {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  #subtitle {
+    font-size: 3rem;
+  }
+
+  #text-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .full-width-btn {
+    margin: 12px 0 0 0;
+  }
+
+  .grid-item2 {
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+
+  .grid-item-last {
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+}
