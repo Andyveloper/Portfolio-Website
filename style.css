@@ -542,6 +542,7 @@ html {
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 
 .pad-bot {
@@ -551,4 +552,22 @@ html {
 .fs {
   font-size: 13px;
   padding: 10px 12px;
+}
+
+#source {
+  border: 1px solid #cc4b02;;
+  background-color: none;
+  padding: 0;
+}
+
+#link {
+  border: 1px solid #cc4b02;;
+  background-color: none;
+  padding: 0;
+}
+
+.btn-style:hover {
+  background-color: #fff5e1;
+  border: 1px solid #cc4b02;
+  color: #cc4b02;
 }
