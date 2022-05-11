@@ -153,7 +153,7 @@ button:active {
   margin: 12px 0;
 }
 
-#work {
+.work {
   background-color: #fff;
 }
 
@@ -464,4 +464,8 @@ textarea {
 
 #mail-icon {
   width: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
