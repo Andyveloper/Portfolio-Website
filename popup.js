@@ -2,10 +2,34 @@ const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
 
+// =====================================================
+
+const gridContainer = document.querySelector('.grid-container');
+const flexContainer = document.querySelector('#grid-item1');
+const mainImage = document.querySelector('#yoga-girl');
+const gridContent = document.querySelector('.grid-content');
+const subtitle = document.querySelector('#subtitle');
+const textContent = document.querySelector('#text-content');
+const langBox = document.querySelector('#lang-boxes');
+// const langBoxItem = document.querySelector('.lang-box1');
+
+const langBoxItem = arr => {
+  const listItem = document.createElement('li');;
+    for (let i = 0; i < arr.length; i++){
+      listItem.classList.add('lang-box1');
+      listItem.innerHTML = arr[i];
+      langBox.appendChild(listItem);
+    }
+
+}
+
+// ======================================================
+
+
 const open = document.querySelectorAll('.see-more');
 for (let i = 0; i < open.length; i++) {
   open[i].addEventListener('click', () => {
-    const main = document.createElement('div');
+  const main = document.createElement('div');
     main.className = 'main';
     const popup = document.createElement('div');
     popup.className = 'popup';
@@ -42,7 +66,7 @@ const projectInformation = [
   {
     name: 'Website Portfolio',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: './img/Snapshoot Portfolio.png',
+    featuredImage: "./img/Img-placeholder.png",
     technologies: {
       technology1: 'html',
       technology2: 'bootstrap',
@@ -125,67 +149,28 @@ const projectInformation = [
   },
 ];
 
-const firstProject = document.querySelector('.projectOne');
-firstProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[0].name;
-  document.getElementById('description').innerHTML = projectInformation[0].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[0].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[0].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[0].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[0].technologies.technology3;
-});
+for (let i = 0; i < projectInformation.length; i++) {
+  if (i === 0){
+    mainImage.src = projectInformation[i].featuredImage;
+    subtitle.innerHTML = projectInformation[i].name;
+    textContent.innerHTML = projectInformation[i].description;
 
-const secondProject = document.querySelector('.projectTwo');
-secondProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[1].name;
-  document.getElementById('description').innerHTML = projectInformation[1].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[1].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[1].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[1].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[1].technologies.technology3;
-});
-const thirdProject = document.querySelector('.projectThree');
-thirdProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[2].name;
-  document.getElementById('description').innerHTML = projectInformation[2].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[2].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[2].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[2].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[2].technologies.technology3;
-});
-const fourthProject = document.querySelector('.projectFour');
-fourthProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[3].name;
-  document.getElementById('description').innerHTML = projectInformation[3].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[3].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[3].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[3].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[3].technologies.technology3;
-});
-const fifthProject = document.querySelector('.projectFive');
-fifthProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[4].name;
-  document.getElementById('description').innerHTML = projectInformation[4].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[4].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[4].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[4].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[4].technologies.technology3;
-});
-const sixthProject = document.querySelector('.projectSix');
-sixthProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[5].name;
-  document.getElementById('description').innerHTML = projectInformation[5].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[5].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[5].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[5].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[5].technologies.technology3;
-});
-const seventhProject = document.querySelector('.projectSeven');
-seventhProject.addEventListener('click', () => {
-  document.getElementById('modal-title').innerHTML = projectInformation[6].name;
-  document.getElementById('description').innerHTML = projectInformation[6].description;
-  document.getElementById('featuredImage').innerHTML = projectInformation[6].featuredImage;
-  document.getElementById('technology1').innerHTML = projectInformation[6].technologies.technology1;
-  document.getElementById('technology2').innerHTML = projectInformation[6].technologies.technology2;
-  document.getElementById('technology3').innerHTML = projectInformation[6].technologies.technology3;
-});
+
+  }
+}
+
+const populateModal = (className, index)  => {
+  const project = document.querySelector(className);
+    project.addEventListener('click', () => {
+      document.getElementById('modal-title').innerHTML = projectInformation[index].name;
+      document.getElementById('description').innerHTML = projectInformation[index].description;
+      document.getElementById('featuredImage').innerHTML = projectInformation[index].featuredImage;
+      document.getElementById('technology1').innerHTML = projectInformation[index].technologies.technology1;
+      document.getElementById('technology2').innerHTML = projectInformation[index].technologies.technology2;
+      document.getElementById('technology3').innerHTML = projectInformation[index].technologies.technology3;
+    });
+}
+
+for (let i = 0; i < projectInformation.length; i++ ) {
+  populateModal(`.project${i+1}`, i)
+}
