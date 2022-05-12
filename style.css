@@ -495,8 +495,8 @@ html {
   border: none;
   background-color: transparent;
   position: fixed;
-  top: 2.43rem;
-  right: 2rem;
+  top: 4.1rem;
+  right: 1.5rem;
 }
 
 .close:hover {
@@ -570,4 +570,12 @@ html {
   background-color: #fff5e1;
   border: 1px solid #cc4b02;
   color: #cc4b02;
+}
+
+#modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #172b4d;
+  line-height: 44px;
 }
