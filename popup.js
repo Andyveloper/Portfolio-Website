@@ -98,7 +98,7 @@ const projectInformation = [
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
-      technology2: 'bootstrap',
+      technology2: 'sass',
       technology3: 'ruby',
     },
     link: 'https://zeraltz.github.io/Portfolio-Website/',
@@ -111,7 +111,7 @@ const projectInformation = [
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
-      technology2: 'bootstrap',
+      technology2: 'tailwind',
       technology3: 'ruby',
     },
     link: 'https://zeraltz.github.io/Portfolio-Website/',
@@ -124,7 +124,7 @@ const projectInformation = [
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
-      technology2: 'bootstrap',
+      technology2: 'javascript',
       technology3: 'ruby',
     },
     link: 'https://zeraltz.github.io/Portfolio-Website/',
