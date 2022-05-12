@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body .active {
@@ -513,6 +514,13 @@ html {
   visibility: visible;
 }
 
+.row-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .dark-bg {
   width: 100vw;
   height: 100vh;
@@ -546,7 +554,7 @@ html {
 }
 
 .pad-bot {
-  padding-bottom: 45px;
+  padding-bottom: 35px;
 }
 
 .fs {
@@ -578,4 +586,10 @@ html {
   font-family: 'Roboto', sans-serif;
   color: #172b4d;
   line-height: 44px;
+}
+
+.centerImage {
+  width: 100%;
+  max-width: 480px;
+  justify-content: center;
 }

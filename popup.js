@@ -17,11 +17,14 @@ for (let i = 0; i < open.length; i++) {
     <li id='technology2' class="lang-box1 fs"></li>
     <li id='technology3' class="lang-box1 fs"></li>
     </ul>
-    <img id='featuredImage' class='centerImage' src="./img/Snapshoot Portfolio.png" alt="">
-    <p id='description' class = 'font-size'></p>
-    <div class='center-btn'>
-      <button id='link'><a class='btn-style' href='https://zeraltz.github.io/Portfolio-Website/'>See Live<img src="./img/icons/Icon - Export.svg" alt=""></a></button>
-      <button id='source'><a class='btn-style' href='https://github.com/Zeraltz/Portfolio-Website'>See Source<img src="./img/social/Icon -GitHub.svg" alt="Github"></a></button> 
+    <div class='row-popup'>
+      <img id='featuredImage' class='centerImage' src="./img/Snapshoot Portfolio.png" alt="">
+      <div class='col-2'>
+      <p id='description' class = 'font-size'></p>
+      <div class='center-btn'>
+        <button id='link'><a class='btn-style' href='https://zeraltz.github.io/Portfolio-Website/'>See Live<img src="./img/icons/Icon - Export.svg" alt=""></a></button>
+        <button id='source'><a class='btn-style' href='https://github.com/Zeraltz/Portfolio-Website'>See Source<img src="./img/social/Icon -GitHub.svg" alt="Github"></a></button> 
+      </div>
     </div>
     `;
       
@@ -193,16 +196,3 @@ let projectInformation = [
   source: 'https://github.com/Zeraltz/Portfolio-Website'
 },
 ];
-
-// const getData = () => {
-//   document.getElementById('modal-title').innerHTML = projectInformation[0].name
-//   document.getElementById('description').innerHTML = projectInformation[0].description
-//   document.getElementById('featuredImage').innerHTML = projectInformation[0].featuredImage
-//   document.getElementById('technology1').innerHTML = projectInformation[0].technologies.technology1
-//   document.getElementById('technology2').innerHTML = projectInformation[0].technologies.technology2
-//   document.getElementById('technology3').innerHTML = projectInformation[0].technologies.technology3
-//   document.getElementById('link').innerHTML = projectInformation[0].link
-//   document.getElementById('source').innerHTML = projectInformation[0].source
-// }
-
-
