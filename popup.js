@@ -2,30 +2,6 @@ const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
 
-// =====================================================
-
-const gridContainer = document.querySelector('.grid-container');
-const flexContainer = document.querySelector('#grid-item1');
-const mainImage = document.querySelector('#yoga-girl');
-const gridContent = document.querySelector('.grid-content');
-const subtitle = document.querySelector('#subtitle');
-const textContent = document.querySelector('#text-content');
-const langBox = document.querySelector('#lang-boxes');
-// const langBoxItem = document.querySelector('.lang-box1');
-
-const langBoxItem = arr => {
-  const listItem = document.createElement('li');;
-    for (let i = 0; i < arr.length; i++){
-      listItem.classList.add('lang-box1');
-      listItem.innerHTML = arr[i];
-      langBox.appendChild(listItem);
-    }
-
-}
-
-// ======================================================
-
-
 const open = document.querySelectorAll('.see-more');
 for (let i = 0; i < open.length; i++) {
   open[i].addEventListener('click', () => {
@@ -71,6 +47,7 @@ const projectInformation = [
       technology1: 'html',
       technology2: 'bootstrap',
       technology3: 'ruby',
+      technology4: 'css',
     },
     link: 'https://zeraltz.github.io/Portfolio-Website/',
     source: 'https://github.com/Zeraltz/Portfolio-Website',
@@ -78,6 +55,7 @@ const projectInformation = [
   {
     name: 'Technology Company Website',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -88,8 +66,9 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
   {
-    name: 'Business Company App',
+    name: 'Business Company Application',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -100,8 +79,9 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
   {
-    name: 'Responsive Mobile App',
+    name: 'Responsive Mobile Application',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -112,8 +92,9 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
   {
-    name: 'Standalone App',
+    name: 'Standalone App for Entrepreneurs',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -124,8 +105,9 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
   {
-    name: 'Comparison App',
+    name: 'Market Price Comparison App',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -136,8 +118,9 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
   {
-    name: 'Weather App',
+    name: 'Weather Forecast Application',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     featuredImage: './img/Snapshoot Portfolio.png',
     technologies: {
       technology1: 'html',
@@ -148,16 +131,6 @@ const projectInformation = [
     source: 'https://github.com/Zeraltz/Portfolio-Website',
   },
 ];
-
-for (let i = 0; i < projectInformation.length; i++) {
-  if (i === 0){
-    mainImage.src = projectInformation[i].featuredImage;
-    subtitle.innerHTML = projectInformation[i].name;
-    textContent.innerHTML = projectInformation[i].description;
-
-
-  }
-}
 
 const populateModal = (className, index)  => {
   const project = document.querySelector(className);
@@ -171,6 +144,6 @@ const populateModal = (className, index)  => {
     });
 }
 
-for (let i = 0; i < projectInformation.length; i++ ) {
+for (let i = 0; i < projectInformation.length; i++) {
   populateModal(`.project${i+1}`, i)
 }
