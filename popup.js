@@ -5,7 +5,7 @@ body.appendChild(section);
 const open = document.querySelectorAll('.see-more');
 for (let i = 0; i < open.length; i++) {
   open[i].addEventListener('click', () => {
-  const main = document.createElement('div');
+    const main = document.createElement('div');
     main.className = 'main';
     const popup = document.createElement('div');
     popup.className = 'popup';
@@ -42,7 +42,7 @@ const projectInformation = [
   {
     name: 'Website Portfolio',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    featuredImage: "./img/Img-placeholder.png",
+    featuredImage: './img/Img-placeholder.png',
     technologies: {
       technology1: 'html',
       technology2: 'bootstrap',
@@ -132,18 +132,18 @@ const projectInformation = [
   },
 ];
 
-const populateModal = (className, index)  => {
+const populateModal = (className, index) => {
   const project = document.querySelector(className);
-    project.addEventListener('click', () => {
-      document.getElementById('modal-title').innerHTML = projectInformation[index].name;
-      document.getElementById('description').innerHTML = projectInformation[index].description;
-      document.getElementById('featuredImage').innerHTML = projectInformation[index].featuredImage;
-      document.getElementById('technology1').innerHTML = projectInformation[index].technologies.technology1;
-      document.getElementById('technology2').innerHTML = projectInformation[index].technologies.technology2;
-      document.getElementById('technology3').innerHTML = projectInformation[index].technologies.technology3;
-    });
-}
+  project.addEventListener('click', () => {
+    document.getElementById('modal-title').innerHTML = projectInformation[index].name;
+    document.getElementById('description').innerHTML = projectInformation[index].description;
+    document.getElementById('featuredImage').innerHTML = projectInformation[index].featuredImage;
+    document.getElementById('technology1').innerHTML = projectInformation[index].technologies.technology1;
+    document.getElementById('technology2').innerHTML = projectInformation[index].technologies.technology2;
+    document.getElementById('technology3').innerHTML = projectInformation[index].technologies.technology3;
+  });
+};
 
 for (let i = 0; i < projectInformation.length; i++) {
-  populateModal(`.project${i+1}`, i)
+  populateModal(`.project${i + 1}`, i);
 }
