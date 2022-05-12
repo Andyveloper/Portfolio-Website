@@ -6,6 +6,9 @@
 ## Project Website (GitHub Pages)
 - https://zeraltz.github.io/Portfolio-Website/ 
 
+## Clone the Project
+- `git clone https://github.com/Zeraltz/Portfolio-Website.git`
+
 ## Built With
 
 - HTML, CSS

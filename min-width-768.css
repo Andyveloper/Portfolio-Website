@@ -325,3 +325,10 @@
   max-width: 480px;
   justify-content: center;
 }
+
+small {
+  margin-left: 5rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
