@@ -479,8 +479,8 @@ html {
 
 .main {
   top: 1.5rem;
-  left: .5rem;
-  right: .5rem;
+  left: 0.5rem;
+  right: 0.5rem;
   bottom: 2rem;
   background: white;
   display: flex;
@@ -527,6 +527,7 @@ html {
   background-color: rgba(0, 0, 0, 0.89);
   z-index: 200;
   overflow: hidden;
+
   /* position: fixed; */
 }
 
@@ -563,13 +564,13 @@ html {
 }
 
 #source {
-  border: 1px solid #cc4b02;;
+  border: 1px solid #cc4b02;
   background-color: none;
   padding: 0;
 }
 
 #link {
-  border: 1px solid #cc4b02;;
+  border: 1px solid #cc4b02;
   background-color: none;
   padding: 0;
 }
