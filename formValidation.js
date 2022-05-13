@@ -17,9 +17,9 @@ const storageData = () => {
 const populateData = () => {
   let storagedData = JSON.parse(localStorage.getItem('data'))
   if (storagedData) {
-    userName.value = storagedData.name;
-    email.value = storagedData.email;
-    textArea.value = storagedData.textArea;
+    storagedData.name = userName.value;
+    storagedData.email = email.value;
+    storagedData.textArea = textArea.value;
   }  
 }
 
